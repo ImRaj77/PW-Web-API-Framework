@@ -1,0 +1,8 @@
+{
+    "coda.advancedSettings": {
+        "backendPort": 58357,
+        "headersTimeout": 0,
+        "bodyTimeout": 0
+    },
+    "coda.apikey": "default_IY0aHJhSB4AWQDgKzzbHWea_QfoCROcPNkaf6AZxR1UagXWtDwtiEc_w18NVS1oJMSWpP6p7sgX2ldByZ14KkA"
+}
