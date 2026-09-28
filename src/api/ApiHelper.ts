@@ -31,7 +31,7 @@ export class ApiHelper {
             headers: headers,
             data: data
         });
-
+        console.log(await response.json(), response.status());
         return {
             status : response.status(),
             body : await response.json()
@@ -44,7 +44,7 @@ export class ApiHelper {
             headers: headers,
             data: data
         });
-
+        console.log(await response.json(), response.status());
         return {
             status : response.status(),
             body : await response.json()
@@ -56,7 +56,7 @@ export class ApiHelper {
         let response = await this.request.delete(`${this.baseURL}${endPoint}`, {
             headers: headers
         });
-
+        console.log(response.status());
         return {
             status : response.status(),
         }
