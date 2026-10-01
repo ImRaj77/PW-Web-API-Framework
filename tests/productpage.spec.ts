@@ -39,3 +39,20 @@ test('verify the product information/data test', async ({homePage, searchResults
     expect.soft(actualProductInfoMap.get('productPrice')).toBe('$2,000.00');
     expect.soft(actualProductInfoMap.get('exTaxPrice')).toBe('$2,000.00');
 });
+
+// Common features tests 
+test('Application logo exists or not on the login page', async({basePage}) => {
+    expect(await basePage.isLogoVisible()).toBeTruthy();
+});
+
+test('Searchbox is visible or not on the login page', async({basePage}) => {
+    expect(await basePage.isSearchBoxVisible()).toBeTruthy();
+});
+
+test('Cart exists on the login page or not', async({basePage}) => {
+    expect(await basePage.isCartButtonVisible()).toBeTruthy();
+});
+
+test('Footers exists on the login page or not', async({basePage}) => {
+    expect(await basePage.getPageFootersCount()).toBeGreaterThan(0);
+});
