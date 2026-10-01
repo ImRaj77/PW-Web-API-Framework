@@ -1,0 +1,557 @@
+[
+ {
+  "time": 1790854017146,
+  "duration": 17986.178,
+  "passed": 33,
+  "failed": 4,
+  "flaky": 0,
+  "skipped": 6,
+  "total": 43,
+  "tests": {
+   "chromium::tests/api/user-api-individual.spec.ts::create a user test": [
+    "p",
+    1045
+   ],
+   "chromium::tests/api/user-api-individual.spec.ts::update a user test": [
+    "p",
+    1615
+   ],
+   "chromium::tests/api/user-api-individual.spec.ts::delete a user test": [
+    "f",
+    866
+   ],
+   "chromium::tests/api/users-api-practice.spec.ts::get all users api test": [
+    "p",
+    621
+   ],
+   "chromium::tests/api/users-api-practice.spec.ts::create u user POST api test": [
+    "p",
+    872
+   ],
+   "chromium::tests/api/users-api-practice.spec.ts::update u user PUT api test": [
+    "f",
+    766
+   ],
+   "chromium::tests/api/users-api-practice.spec.ts::update u user PATCH api test": [
+    "f",
+    312
+   ],
+   "chromium::tests/api/users-api-practice.spec.ts::delete created user DELETE api test": [
+    "f",
+    678
+   ],
+   "chromium::tests/api/users-api-schema.spec.ts::Get a user - Schema Test": [
+    "p",
+    715
+   ],
+   "chromium::tests/api/users-api-schema.spec.ts::Get all users - Schema Test": [
+    "p",
+    871
+   ],
+   "chromium::tests/api/users-api.spec.ts::running end to end gorest crud apis tests › GET API - Get all users": [
+    "p",
+    629
+   ],
+   "chromium::tests/api/users-api.spec.ts::running end to end gorest crud apis tests › POST API - create u new user": [
+    "p",
+    383
+   ],
+   "chromium::tests/api/users-api.spec.ts::running end to end gorest crud apis tests › PUT API - update a user": [
+    "p",
+    323
+   ],
+   "chromium::tests/api/users-api.spec.ts::running end to end gorest crud apis tests › DELETE API - delete a user": [
+    "p",
+    400
+   ],
+   "chromium::tests/homepage.spec.ts::Home page title test": [
+    "p",
+    3427
+   ],
+   "chromium::tests/homepage.spec.ts::Logout link exists or not": [
+    "p",
+    3818
+   ],
+   "chromium::tests/homepage.spec.ts::Home page headers exists or not": [
+    "p",
+    3504
+   ],
+   "chromium::tests/homepagePOM.spec.ts::Home page title test": [
+    "s",
+    0
+   ],
+   "chromium::tests/homepagePOM.spec.ts::Logout link exists or not": [
+    "s",
+    0
+   ],
+   "chromium::tests/homepagePOM.spec.ts::Home page headers exists or not": [
+    "s",
+    0
+   ],
+   "chromium::tests/loginpage.spec.ts::Login page title - test": [
+    "p",
+    2525
+   ],
+   "chromium::tests/loginpage.spec.ts::Forgotten pwd link - test": [
+    "p",
+    2636
+   ],
+   "chromium::tests/loginpage.spec.ts::user is able to login to the app with valid credentials - test": [
+    "p",
+    3364
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data - invalid@open.com - wrong@123": [
+    "p",
+    2653
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data -  - pw123": [
+    "p",
+    2497
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data - raz@pw.com - ": [
+    "p",
+    2721
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- wrong@open.com - wrong@1234": [
+    "p",
+    2548
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- wrong@open.com - ": [
+    "p",
+    2723
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- pwapril@pw.com - wrong@1234": [
+    "p",
+    2364
+   ],
+   "chromium::tests/loginpagePOM.spec.ts::Login page title - test": [
+    "s",
+    0
+   ],
+   "chromium::tests/loginpagePOM.spec.ts::Forgotten pwd link - test": [
+    "s",
+    0
+   ],
+   "chromium::tests/loginpagePOM.spec.ts::user is able to login to th app - test": [
+    "s",
+    0
+   ],
+   "chromium::tests/productpage.spec.ts::verify product header test": [
+    "p",
+    4998
+   ],
+   "chromium::tests/productpage.spec.ts::verify product images count test": [
+    "p",
+    4495
+   ],
+   "chromium::tests/productpage.spec.ts::verify the product information/data test": [
+    "p",
+    4224
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the search result count test - macbook - MacBook Pro": [
+    "p",
+    3173
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the search result count test - macbook - MacBook Air": [
+    "p",
+    3283
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the search result count test - imac - iMac": [
+    "p",
+    3410
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the search result count test - samsung - Samsung Galaxy Tab 10.1": [
+    "p",
+    2957
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the use ris able to land on the product page test - macbook - MacBook Pro": [
+    "p",
+    3522
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the use ris able to land on the product page test - macbook - MacBook Air": [
+    "p",
+    3724
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the use ris able to land on the product page test - imac - iMac": [
+    "p",
+    3805
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the use ris able to land on the product page test - samsung - Samsung Galaxy Tab 10.1": [
+    "p",
+    3928
+   ]
+  }
+ },
+ {
+  "time": 1790854568931,
+  "duration": 16968.986999999997,
+  "passed": 34,
+  "failed": 3,
+  "flaky": 0,
+  "skipped": 6,
+  "total": 43,
+  "tests": {
+   "chromium::tests/api/user-api-individual.spec.ts::create a user test": [
+    "p",
+    1022
+   ],
+   "chromium::tests/api/user-api-individual.spec.ts::update a user test": [
+    "p",
+    1857
+   ],
+   "chromium::tests/api/user-api-individual.spec.ts::delete a user test": [
+    "p",
+    1627
+   ],
+   "chromium::tests/api/users-api-practice.spec.ts::get all users api test": [
+    "p",
+    762
+   ],
+   "chromium::tests/api/users-api-practice.spec.ts::create u user POST api test": [
+    "p",
+    893
+   ],
+   "chromium::tests/api/users-api-practice.spec.ts::update u user PUT api test": [
+    "f",
+    895
+   ],
+   "chromium::tests/api/users-api-practice.spec.ts::update u user PATCH api test": [
+    "f",
+    291
+   ],
+   "chromium::tests/api/users-api-practice.spec.ts::delete created user DELETE api test": [
+    "f",
+    579
+   ],
+   "chromium::tests/api/users-api-schema.spec.ts::Get a user - Schema Test": [
+    "p",
+    602
+   ],
+   "chromium::tests/api/users-api-schema.spec.ts::Get all users - Schema Test": [
+    "p",
+    311
+   ],
+   "chromium::tests/api/users-api.spec.ts::running end to end gorest crud apis tests › GET API - Get all users": [
+    "p",
+    546
+   ],
+   "chromium::tests/api/users-api.spec.ts::running end to end gorest crud apis tests › POST API - create u new user": [
+    "p",
+    292
+   ],
+   "chromium::tests/api/users-api.spec.ts::running end to end gorest crud apis tests › PUT API - update a user": [
+    "p",
+    296
+   ],
+   "chromium::tests/api/users-api.spec.ts::running end to end gorest crud apis tests › DELETE API - delete a user": [
+    "p",
+    326
+   ],
+   "chromium::tests/homepage.spec.ts::Home page title test": [
+    "p",
+    2373
+   ],
+   "chromium::tests/homepage.spec.ts::Logout link exists or not": [
+    "p",
+    2781
+   ],
+   "chromium::tests/homepage.spec.ts::Home page headers exists or not": [
+    "p",
+    2567
+   ],
+   "chromium::tests/homepagePOM.spec.ts::Home page title test": [
+    "s",
+    0
+   ],
+   "chromium::tests/homepagePOM.spec.ts::Logout link exists or not": [
+    "s",
+    0
+   ],
+   "chromium::tests/homepagePOM.spec.ts::Home page headers exists or not": [
+    "s",
+    0
+   ],
+   "chromium::tests/loginpage.spec.ts::Login page title - test": [
+    "p",
+    1750
+   ],
+   "chromium::tests/loginpage.spec.ts::Forgotten pwd link - test": [
+    "p",
+    1955
+   ],
+   "chromium::tests/loginpage.spec.ts::user is able to login to the app with valid credentials - test": [
+    "p",
+    2538
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data - invalid@open.com - wrong@123": [
+    "p",
+    2380
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data -  - pw123": [
+    "p",
+    2273
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data - raz@pw.com - ": [
+    "p",
+    2207
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- wrong@open.com - wrong@1234": [
+    "p",
+    2236
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- wrong@open.com - ": [
+    "p",
+    2262
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- pwapril@pw.com - wrong@1234": [
+    "p",
+    2196
+   ],
+   "chromium::tests/loginpagePOM.spec.ts::Login page title - test": [
+    "s",
+    0
+   ],
+   "chromium::tests/loginpagePOM.spec.ts::Forgotten pwd link - test": [
+    "s",
+    0
+   ],
+   "chromium::tests/loginpagePOM.spec.ts::user is able to login to th app - test": [
+    "s",
+    0
+   ],
+   "chromium::tests/productpage.spec.ts::verify product header test": [
+    "p",
+    3714
+   ],
+   "chromium::tests/productpage.spec.ts::verify product images count test": [
+    "p",
+    3816
+   ],
+   "chromium::tests/productpage.spec.ts::verify the product information/data test": [
+    "p",
+    3865
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the search result count test - macbook - MacBook Pro": [
+    "p",
+    3044
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the search result count test - macbook - MacBook Air": [
+    "p",
+    2843
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the search result count test - imac - iMac": [
+    "p",
+    3116
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the search result count test - samsung - Samsung Galaxy Tab 10.1": [
+    "p",
+    3049
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the use ris able to land on the product page test - macbook - MacBook Pro": [
+    "p",
+    3742
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the use ris able to land on the product page test - macbook - MacBook Air": [
+    "p",
+    3540
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the use ris able to land on the product page test - imac - iMac": [
+    "p",
+    3589
+   ],
+   "chromium::tests/searchpage.spec.ts::verify the use ris able to land on the product page test - samsung - Samsung Galaxy Tab 10.1": [
+    "p",
+    3855
+   ]
+  }
+ },
+ {
+  "time": 1790859048361,
+  "duration": 7962.401,
+  "passed": 13,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 13,
+  "tests": {
+   "chromium::tests/loginpage.spec.ts::Login page title - test": [
+    "p",
+    2116
+   ],
+   "chromium::tests/loginpage.spec.ts::Forgotten pwd link - test": [
+    "p",
+    2056
+   ],
+   "chromium::tests/loginpage.spec.ts::user is able to login to the app with valid credentials - test": [
+    "p",
+    3144
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data - invalid@open.com - wrong@123": [
+    "p",
+    2774
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data -  - pw123": [
+    "p",
+    2739
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data - raz@pw.com - ": [
+    "p",
+    2739
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- wrong@open.com - wrong@1234": [
+    "p",
+    2642
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- wrong@open.com - ": [
+    "p",
+    2563
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- pwapril@pw.com - wrong@1234": [
+    "p",
+    2766
+   ],
+   "chromium::tests/loginpage.spec.ts::Application logo exists or not on the login page": [
+    "p",
+    2141
+   ],
+   "chromium::tests/loginpage.spec.ts::Searchbox is visible or not on the login page": [
+    "p",
+    2198
+   ],
+   "chromium::tests/loginpage.spec.ts::Cart exists on the login page or not": [
+    "p",
+    1984
+   ],
+   "chromium::tests/loginpage.spec.ts::Footers exists on the login page or not": [
+    "p",
+    2055
+   ]
+  }
+ },
+ {
+  "time": 1790859154365,
+  "duration": 8668.729,
+  "passed": 13,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 13,
+  "tests": {
+   "chromium::tests/loginpage.spec.ts::Login page title - test": [
+    "p",
+    2424
+   ],
+   "chromium::tests/loginpage.spec.ts::Forgotten pwd link - test": [
+    "p",
+    2706
+   ],
+   "chromium::tests/loginpage.spec.ts::user is able to login to the app with valid credentials - test": [
+    "p",
+    3442
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data - invalid@open.com - wrong@123": [
+    "p",
+    2434
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data -  - pw123": [
+    "p",
+    3575
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data - raz@pw.com - ": [
+    "p",
+    2792
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- wrong@open.com - wrong@1234": [
+    "p",
+    2711
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- wrong@open.com - ": [
+    "p",
+    2978
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- pwapril@pw.com - wrong@1234": [
+    "p",
+    2963
+   ],
+   "chromium::tests/loginpage.spec.ts::Application logo exists or not on the login page": [
+    "p",
+    2357
+   ],
+   "chromium::tests/loginpage.spec.ts::Searchbox is visible or not on the login page": [
+    "p",
+    2041
+   ],
+   "chromium::tests/loginpage.spec.ts::Cart exists on the login page or not": [
+    "p",
+    2375
+   ],
+   "chromium::tests/loginpage.spec.ts::Footers exists on the login page or not": [
+    "p",
+    2383
+   ]
+  }
+ },
+ {
+  "time": 1790859282237,
+  "duration": 6882.246,
+  "passed": 13,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 13,
+  "tests": {
+   "chromium::tests/loginpage.spec.ts::Login page title - test": [
+    "p",
+    1912
+   ],
+   "chromium::tests/loginpage.spec.ts::Forgotten pwd link - test": [
+    "p",
+    1843
+   ],
+   "chromium::tests/loginpage.spec.ts::user is able to login to the app with valid credentials - test": [
+    "p",
+    2543
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data - invalid@open.com - wrong@123": [
+    "p",
+    2346
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data -  - pw123": [
+    "p",
+    2585
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with CSV Data - raz@pw.com - ": [
+    "p",
+    2430
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- wrong@open.com - wrong@1234": [
+    "p",
+    2259
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- wrong@open.com - ": [
+    "p",
+    2239
+   ],
+   "chromium::tests/loginpage.spec.ts::user is trying to login to the app with invalid credentials with Json data- pwapril@pw.com - wrong@1234": [
+    "p",
+    2232
+   ],
+   "chromium::tests/loginpage.spec.ts::Application logo exists or not on the login page": [
+    "p",
+    1786
+   ],
+   "chromium::tests/loginpage.spec.ts::Searchbox is visible or not on the login page": [
+    "p",
+    1754
+   ],
+   "chromium::tests/loginpage.spec.ts::Cart exists on the login page or not": [
+    "p",
+    1730
+   ],
+   "chromium::tests/loginpage.spec.ts::Footers exists on the login page or not": [
+    "p",
+    1781
+   ]
+  }
+ }
+]

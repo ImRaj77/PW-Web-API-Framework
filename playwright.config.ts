@@ -1,4 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
+import reportingLabs from './reporting-labs.config';
+
 import dotenv from 'dotenv';
 
 
@@ -19,12 +21,24 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
+
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+    ['list'],
+    ['html', { outputFolder: 'reports/html-report', open:'never'}],
+    ['allure-playwright', {
+      outputFolder: 'allure-results',
+      suiteTitle: true,
+    }],
+    ['reporting-labs', reportingLabs]
+  ],
+
   use: {
     baseURL: process.env.BASE_URL,
-    headless: false,
+    headless: true,
     trace: 'on-first-retry',
+    screenshot: 'on',
+    video: 'on'
   },
 
   /* Configure projects for major browsers */

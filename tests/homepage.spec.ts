@@ -30,3 +30,20 @@ test('Home page headers exists or not', async ({homePage}) => {
         'Newsletter'
     ]);                             // here the sequence should be in the same order as its index based array
 });
+
+// Common features tests 
+test('Application logo exists or not on the login page', async({basePage}) => {
+    expect(await basePage.isLogoVisible()).toBeTruthy();
+});
+
+test('Searchbox is visible or not on the login page', async({basePage}) => {
+    expect(await basePage.isSearchBoxVisible()).toBeTruthy();
+});
+
+test('Cart exists on the login page or not', async({basePage}) => {
+    expect(await basePage.isCartButtonVisible()).toBeTruthy();
+});
+
+test('Footers exists on the login page or not', async({basePage}) => {
+    expect(await basePage.getPageFootersCount()).toBeGreaterThan(0);
+});
