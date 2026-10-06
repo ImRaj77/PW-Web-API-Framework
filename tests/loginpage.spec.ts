@@ -11,7 +11,7 @@ test.beforeEach(async ({loginPage}) => {
     await loginPage.gotoLoginPage();
 });
 
-test('Login page title - test', async ({loginPage}) => {
+test('@smoke Login page title - test', async ({loginPage}) => {
     meta({priority: 'P2', severity: 'minor', owner: 'Raja', story: 'US101', epic: 'ep300', feature: 'F30', issue: 'bug34'});
 
     let pageTitle = await loginPage.getPageTitle();
@@ -21,12 +21,12 @@ test('Login page title - test', async ({loginPage}) => {
     expect(pageTitle).toBe('Account Login');
 });
 
-test('Forgotten pwd link - test', async ({loginPage}) => {
+test('@regression Forgotten pwd link - test', async ({loginPage}) => {
     meta({priority: 'P1', severity: 'critical', owner: 'Raja123', story: 'US102', epic: 'ep300', feature: 'F31', issue: 'bug35'});
     expect(await loginPage.isForgottenPwdLinkExists()).toBeTruthy();
 });
 
-test('user is able to login to the app with valid credentials - test', async ({loginPage, homePage}) => {
+test('@regression user is able to login to the app with valid credentials - test', async ({loginPage, homePage}) => {
     meta({priority: 'P1', severity: 'major', owner: 'Ajit1', story: 'US103', epic: 'ep103', feature: 'F32', issue: 'bug37'});
     await testData({username: process.env.USERNAME!, password: process. env.PASSWORD!}, 'Login');
 
@@ -56,7 +56,7 @@ test('user is able to login to the app with valid credentials - test', async ({l
 // DD_1: read csv data from csv file and loop the test method row wise....
 let testCSVData = CsvHelper.readCsv('src/testdata/logindata.csv');
 for(let row of testCSVData) {
-    test(`user is trying to login to the app with invalid credentials with CSV Data - ${row.username} - ${row.password}`, async ({loginPage, homePage}) => {
+    test(`@regression user is trying to login to the app with invalid credentials with CSV Data - ${row.username} - ${row.password}`, async ({loginPage, homePage}) => {
         meta({priority: 'P2', severity: 'major', owner: 'Ajit', story: 'US103', epic: 'ep103', feature: 'F32', issue: 'bug37'});
         await testData(testCSVData, 'Invalid login credentials');
         await loginPage.doLogin(row.username, row.password);
@@ -69,7 +69,7 @@ for(let row of testCSVData) {
 // DD_2: read xlsx data from excel file and loop the test method row wise....
 let testExcelData = ExcelHelper.readExcel('src/testdata/opencart.xlsx', 'login');
 for(let row of testExcelData) {
-    test(`user is trying to login to the app with invalid credentials with Excel data- ${row.username} - ${row.password}`, async ({loginPage, homePage}) => {
+    test(`@regression user is trying to login to the app with invalid credentials with Excel data- ${row.username} - ${row.password}`, async ({loginPage, homePage}) => {
         meta({priority: 'P2', severity: 'major', owner: 'Ajit1', story: 'US103', epic: 'ep103', feature: 'F32', issue: 'bug37'});
         await testData(testExcelData, 'Invalid login credentials');
         await loginPage.doLogin(row.username, row.password);
@@ -81,7 +81,7 @@ for(let row of testExcelData) {
 // DD_3: read JSON data from .json file and loop the test method row wise....
 let testJsonData = JsonHelper.readJson('src/testdata/logindata.json');
 for(let row of testJsonData) {
-    test(`user is trying to login to the app with invalid credentials with Json data- ${row.username} - ${row.password}`, async ({loginPage, homePage}) => {
+    test(`@regression user is trying to login to the app with invalid credentials with Json data- ${row.username} - ${row.password}`, async ({loginPage, homePage}) => {
         meta({priority: 'P2', severity: 'major', owner: 'Ajit1', story: 'US103', epic: 'ep103', feature: 'F32', issue: 'bug37'});
         await testData(testJsonData, 'Invalid login credentials');
         await loginPage.doLogin(row.username, row.password);
@@ -91,18 +91,18 @@ for(let row of testJsonData) {
 
 
 // Common features tests 
-test('Application logo exists or not on the login page', async({basePage}) => {
+test('@smoke Application logo exists or not on the login page', async({basePage}) => {
     expect(await basePage.isLogoVisible()).toBeTruthy();
 });
 
-test('Searchbox is visible or not on the login page', async({basePage}) => {
+test('@smoke Searchbox is visible or not on the login page', async({basePage}) => {
     expect(await basePage.isSearchBoxVisible()).toBeTruthy();
 });
 
-test('Cart exists on the login page or not', async({basePage}) => {
+test('@smoke Cart exists on the login page or not', async({basePage}) => {
     expect(await basePage.isCartButtonVisible()).toBeTruthy();
 });
 
-test('Footers exists on the login page or not', async({basePage}) => {
+test('@smoke Footers exists on the login page or not', async({basePage}) => {
     expect(await basePage.getPageFootersCount()).toBeGreaterThan(0);
 });

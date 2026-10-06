@@ -54,7 +54,7 @@ let userArraySchema = {
 };
 
 
-test('Get a user - Schema Test', async({apiHelper}) => {
+test('@smoke Get a user - Schema Test', async({apiHelper}) => {
     let userData = {
             "name": "Manish",
             "email": `pwautomation_${Date.now()}@open.com`,
@@ -83,7 +83,7 @@ test('Get a user - Schema Test', async({apiHelper}) => {
 });
 
 
-test('Get all users - Schema Test', async({apiHelper}) => {
+test('@smoke Get all users - Schema Test', async({apiHelper}) => {
 
     // get all users
     let getResponse = await apiHelper.get(`/public/v2/users`, AUTH_HEADER);

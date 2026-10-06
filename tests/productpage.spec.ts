@@ -7,14 +7,14 @@ test.beforeEach( async ({loginPage}) => {
 });
 
 
-test('verify product header test', async({homePage, searchResultsPage, productInfoPage}) => {
+test('@smoke verify product header test', async({homePage, searchResultsPage, productInfoPage}) => {
     await homePage.searchProduct('macbook');
     await searchResultsPage.selectProduct('MacBook Pro');
     expect(await productInfoPage.getProductHeader()).toBe('MacBook Pro');
 });
 
 
-test('verify product images count test', async({homePage, searchResultsPage, productInfoPage}) => {
+test('@regression verify product images count test', async({homePage, searchResultsPage, productInfoPage}) => {
     await homePage.searchProduct('macbook');
     await searchResultsPage.selectProduct('MacBook Pro');
     expect.soft(await productInfoPage.getProductImagesCount()).toBe(4);
@@ -22,7 +22,7 @@ test('verify product images count test', async({homePage, searchResultsPage, pro
 });
 
 
-test('verify the product information/data test', async ({homePage, searchResultsPage, productInfoPage}) => {
+test('@regression verify the product information/data test', async ({homePage, searchResultsPage, productInfoPage}) => {
     await homePage.searchProduct('macbook');
     await searchResultsPage.selectProduct('MacBook Pro');
 
@@ -41,18 +41,18 @@ test('verify the product information/data test', async ({homePage, searchResults
 });
 
 // Common features tests 
-test('Application logo exists or not on the login page', async({basePage}) => {
+test('@smoke Application logo exists or not on the login page', async({basePage}) => {
     expect(await basePage.isLogoVisible()).toBeTruthy();
 });
 
-test('Searchbox is visible or not on the login page', async({basePage}) => {
+test('@smoke Searchbox is visible or not on the login page', async({basePage}) => {
     expect(await basePage.isSearchBoxVisible()).toBeTruthy();
 });
 
-test('Cart exists on the login page or not', async({basePage}) => {
+test('@smoke Cart exists on the login page or not', async({basePage}) => {
     expect(await basePage.isCartButtonVisible()).toBeTruthy();
 });
 
-test('Footers exists on the login page or not', async({basePage}) => {
+test('@smoke Footers exists on the login page or not', async({basePage}) => {
     expect(await basePage.getPageFootersCount()).toBeGreaterThan(0);
 });

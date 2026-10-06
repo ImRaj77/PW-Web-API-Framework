@@ -11,7 +11,7 @@ test.beforeEach( async ({loginPage}) => {
 // Data Provider :
 let productData = CsvHelper.readCsv('src/testdata/product.csv');
 for(let row of productData) {
-    test(`verify the search result count test - ${row.searchkey} - ${row.productname}`, async ({homePage, searchResultsPage}) => {
+    test(`@regression verify the search result count test - ${row.searchkey} - ${row.productname}`, async ({homePage, searchResultsPage}) => {
         await homePage.searchProduct(row.searchkey);
         let actualResultCount = await searchResultsPage.getProductSearchResultsCount();
         console.log('Search results count:',actualResultCount);
@@ -21,7 +21,7 @@ for(let row of productData) {
 }
 
 for(let row of productData) {
-    test(`verify the use ris able to land on the product page test - ${row.searchkey} - ${row.productname}`, async({page, homePage, searchResultsPage}) => {
+    test(`@smoke verify the use ris able to land on the product page test - ${row.searchkey} - ${row.productname}`, async({page, homePage, searchResultsPage}) => {
         await homePage.searchProduct(row.searchkey);
         await searchResultsPage.selectProduct(row.productname);
         expect(await page.title()).toBe(row.productname);
@@ -30,18 +30,18 @@ for(let row of productData) {
 
 
 // Common features tests 
-test('Application logo exists or not on the login page', async({basePage}) => {
+test('@smoke Application logo exists or not on the login page', async({basePage}) => {
     expect(await basePage.isLogoVisible()).toBeTruthy();
 });
 
-test('Searchbox is visible or not on the login page', async({basePage}) => {
+test('@smoke Searchbox is visible or not on the login page', async({basePage}) => {
     expect(await basePage.isSearchBoxVisible()).toBeTruthy();
 });
 
-test('Cart exists on the login page or not', async({basePage}) => {
+test('@smoke Cart exists on the login page or not', async({basePage}) => {
     expect(await basePage.isCartButtonVisible()).toBeTruthy();
 });
 
-test('Footers exists on the login page or not', async({basePage}) => {
+test('@smoke Footers exists on the login page or not', async({basePage}) => {
     expect(await basePage.getPageFootersCount()).toBeGreaterThan(0);
 });

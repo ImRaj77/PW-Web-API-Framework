@@ -12,14 +12,14 @@ let userId: number;
 test.describe.serial('running end to end gorest crud apis tests', () => {
 
     // GET Test:
-    test('GET API - Get all users', async({apiHelper}) => {
+    test('@smoke @regression GET API - Get all users', async({apiHelper}) => {
         let response = await apiHelper.get('/public/v2/users', AUTH_HEADER);
         expect(response.status).toBe(200);
         expect(response.body.length).toBeGreaterThan(0);
     });
 
     // POST Test:
-    test('POST API - create u new user', async({apiHelper}) => {
+    test('@regression POST API - create u new user', async({apiHelper}) => {
 
         let userData = {
             "name": "Playwrigth API Auto User",
@@ -35,7 +35,7 @@ test.describe.serial('running end to end gorest crud apis tests', () => {
     });
 
     // PUT Test:
-    test('PUT API - update a user', async({apiHelper}) => {
+    test('@regression PUT API - update a user', async({apiHelper}) => {
 
         let userData = {
             "name": "Manish API Auto User",
@@ -49,7 +49,7 @@ test.describe.serial('running end to end gorest crud apis tests', () => {
     });
 
     // DELETE Test:
-    test('DELETE API - delete a user', async({apiHelper}) => {
+    test('@regression DELETE API - delete a user', async({apiHelper}) => {
         let response = await apiHelper.delete(`/public/v2/users/${userId}`, AUTH_HEADER);
         expect(response.status).toBe(204);
     });
