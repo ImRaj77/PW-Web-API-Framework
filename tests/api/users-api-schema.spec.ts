@@ -4,7 +4,7 @@
 // npm install ajv
 
 import Ajv from 'ajv';
-import {test, expect} from '../../src/fixtures/apiFixtures';
+import {test, expect} from '../../src/fixtures/apifixtures';
 
 import { ApiHelper } from '../../src/api/ApiHelper';
 

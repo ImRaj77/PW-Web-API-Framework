@@ -1,5 +1,5 @@
 
-import {test, expect} from '../../src/fixtures/apiFixtures';
+import {test, expect} from '../../src/fixtures/apifixtures';
 
 const TOKEN = process.env.API_TOKEN;
 
