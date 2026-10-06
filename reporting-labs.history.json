@@ -553,5 +553,64 @@
     1781
    ]
   }
+ },
+ {
+  "time": 1791293916715,
+  "duration": 12520.400000000001,
+  "passed": 11,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 12,
+  "tests": {
+   "chromium::tests/searchpage.spec.ts::@regression verify the search result count test - macbook - MacBook Pro": [
+    "p",
+    5169
+   ],
+   "chromium::tests/searchpage.spec.ts::@regression verify the search result count test - macbook - MacBook Air": [
+    "p",
+    5609
+   ],
+   "chromium::tests/searchpage.spec.ts::@regression verify the search result count test - imac - iMac": [
+    "p",
+    5641
+   ],
+   "chromium::tests/searchpage.spec.ts::@regression verify the search result count test - samsung - Samsung Galaxy Tab 10.1": [
+    "p",
+    5514
+   ],
+   "chromium::tests/searchpage.spec.ts::@smoke verify the use ris able to land on the product page test - macbook - MacBook Pro": [
+    "p",
+    7476
+   ],
+   "chromium::tests/searchpage.spec.ts::@smoke verify the use ris able to land on the product page test - macbook - MacBook Air": [
+    "p",
+    6332
+   ],
+   "chromium::tests/searchpage.spec.ts::@smoke verify the use ris able to land on the product page test - imac - iMac": [
+    "p",
+    4545
+   ],
+   "chromium::tests/searchpage.spec.ts::@smoke verify the use ris able to land on the product page test - samsung - Samsung Galaxy Tab 10.1": [
+    "p",
+    5246
+   ],
+   "chromium::tests/searchpage.spec.ts::@smoke Application logo exists or not on the login page": [
+    "p",
+    3071
+   ],
+   "chromium::tests/searchpage.spec.ts::@smoke Searchbox is visible or not on the login page": [
+    "p",
+    3285
+   ],
+   "chromium::tests/searchpage.spec.ts::@smoke Cart exists on the login page or not": [
+    "f",
+    3179
+   ],
+   "chromium::tests/searchpage.spec.ts::@smoke Footers exists on the login page or not": [
+    "p",
+    3327
+   ]
+  }
  }
 ]

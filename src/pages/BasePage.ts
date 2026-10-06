@@ -36,7 +36,7 @@ export class BasePage {
     }
 
     async isCartButtonVisible(): Promise<boolean> {
-        return await this.cartButton.isVisible();
+        return await this.cartButton.first().isVisible();
     }
 
     async getPageFootersCount(): Promise<number> {
