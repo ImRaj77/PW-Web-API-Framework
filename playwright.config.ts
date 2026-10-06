@@ -20,22 +20,34 @@ export default defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.CI ? 2 : undefined,
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [
-    ['list'],
-    ['html', { outputFolder: 'reports/html-report', open:'never'}],
-    ['allure-playwright', {
-      outputFolder: 'allure-results',
-      suiteTitle: true,
-    }],
-    ['reporting-labs', reportingLabs]
-  ],
+  reporter: process.env.CI
+    ?   // REMOTE
+      [
+        ['list'],
+        ['html', { outputFolder: 'reports/html-report', open:'never'}],
+        ['allure-playwright', {
+          outputFolder: 'allure-results',
+          suiteTitle: true,
+        }],
+        ['reporting-labs', reportingLabs]
+      ]
+    :   // LOCAL
+      [
+        ['list'],
+        ['html', { outputFolder: 'reports/html-report', open:'never'}],
+        ['allure-playwright', {
+          outputFolder: 'allure-results',
+          suiteTitle: true,
+        }],
+        ['reporting-labs', reportingLabs]
+    ],
 
   use: {
     baseURL: process.env.BASE_URL,
-    headless: true,
+    headless: !process.env.CI ? false : true,       // CI = true (bydefault) for github actions
     trace: 'on-first-retry',
     screenshot: 'on',
     video: 'on'
