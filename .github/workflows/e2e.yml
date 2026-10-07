@@ -1,6 +1,6 @@
 # ═══════════════════════════════════════════════════════════════
 # FILE: .github/workflows/master-pipeline.yml
-# REPO: naveenanimation20/OpenCartWebAPIAutomationFramework
+# REPO: ImRaj77/PW-Web-API-Framework
 # DEV REPO: jglick/simple-maven-project-with-tests
 # ═══════════════════════════════════════════════════════════════
 # "Run up to environment" — the dropdown controls how far the
@@ -85,7 +85,7 @@ jobs:
       - name: Checkout QA repo
         uses: actions/checkout@v4
         with:
-          repository: naveenanimation20/OpenCartWebAPIAutomationFramework
+          repository: ImRaj77/PW-Web-API-Framework
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -188,7 +188,7 @@ jobs:
       - name: Checkout QA repo
         uses: actions/checkout@v4
         with:
-          repository: naveenanimation20/OpenCartWebAPIAutomationFramework
+          repository: ImRaj77/PW-Web-API-Framework
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -291,7 +291,7 @@ jobs:
       - name: Checkout QA repo
         uses: actions/checkout@v4
         with:
-          repository: naveenanimation20/OpenCartWebAPIAutomationFramework
+          repository: ImRaj77/PW-Web-API-Framework
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -395,7 +395,7 @@ jobs:
       - name: Checkout QA repo
         uses: actions/checkout@v4
         with:
-          repository: naveenanimation20/OpenCartWebAPIAutomationFramework
+          repository: ImRaj77/PW-Web-API-Framework
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
