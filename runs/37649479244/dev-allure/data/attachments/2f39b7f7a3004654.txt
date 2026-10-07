@@ -1,0 +1,72 @@
+[
+  {
+    id: 8655311,
+    name: 'Manish',
+    email: 'pwautomation_1791389262293@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8655293,
+    name: 'apiautomation-update',
+    email: 'apiautomation1791388249217@open.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8655294,
+    name: 'apiautomation',
+    email: 'apiautomation1791388249194@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8655291,
+    name: 'Manish',
+    email: 'pwautomation_1791388153031@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8655289,
+    name: 'Manish',
+    email: 'pwautomation_1791388046006@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8655288,
+    name: 'Playwrigth API Auto User',
+    email: 'pwauto_1791388041208@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8655285,
+    name: 'apiautomation-update',
+    email: 'apiautomation1791388038583@open.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8655286,
+    name: 'apiautomation',
+    email: 'apiautomation1791388038606@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8655276,
+    name: 'Manish',
+    email: 'pwautomation_1791387888412@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8655275,
+    name: 'Playwrigth API Auto User',
+    email: 'pwauto_1791387883613@open.com',
+    gender: 'male',
+    status: 'active'
+  }
+] 200
