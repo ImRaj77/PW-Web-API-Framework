@@ -1,0 +1,14 @@
+{
+  id: 8655326,
+  name: 'apiautomation',
+  email: 'apiautomation1791389814891@open.com',
+  gender: 'male',
+  status: 'active'
+} 201
+{
+  id: 8655326,
+  name: 'apiautomation',
+  email: 'apiautomation1791389814891@open.com',
+  gender: 'male',
+  status: 'active'
+} 200

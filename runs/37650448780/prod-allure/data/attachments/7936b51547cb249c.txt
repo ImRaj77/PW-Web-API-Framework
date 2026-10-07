@@ -1,0 +1,15 @@
+{
+  id: 8655331,
+  name: 'Manish',
+  email: 'pwautomation_1791389977932@open.com',
+  gender: 'male',
+  status: 'active'
+} 201
+created user id: 8655331
+{
+  id: 8655331,
+  name: 'Manish',
+  email: 'pwautomation_1791389977932@open.com',
+  gender: 'male',
+  status: 'active'
+} 200
