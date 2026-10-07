@@ -1,0 +1,3 @@
+usr credentials: raz@pw.com & pw@123
+Product to search: macbook
+Search results count: 3

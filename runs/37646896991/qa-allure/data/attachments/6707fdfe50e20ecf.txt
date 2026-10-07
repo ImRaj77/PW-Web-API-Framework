@@ -1,0 +1,7 @@
+{
+  id: 8655296,
+  name: 'Manish API Auto User',
+  email: 'pwauto_1791388251971@open.com',
+  gender: 'male',
+  status: 'inactive'
+} 200
