@@ -1,0 +1,2 @@
+usr credentials: raz@pw.com & pw@123
+Home page headers [ 'My Account', 'My Orders', 'My Affiliate Account', 'Newsletter' ]

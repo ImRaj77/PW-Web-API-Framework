@@ -1,0 +1,13 @@
+usr credentials: raz@pw.com & pw@123
+Product to search: macbook
+Selecting product: MacBook Pro
+Actual Product Details Map(8) {
+  'productHeader' => 'MacBook Pro',
+  'productImagesCount' => 4,
+  'Brand' => 'Apple',
+  'Product Code' => 'Product 18',
+  'Reward Points' => '800',
+  'Availability' => 'Out Of Stock',
+  'productPrice' => '$2,000.00',
+  'exTaxPrice' => '$2,000.00'
+}

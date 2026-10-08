@@ -1,0 +1,16 @@
+{
+  id: 8655996,
+  name: 'apiautomation',
+  email: 'apiautomation1791433145408@open.com',
+  gender: 'male',
+  status: 'active'
+} 201
+{
+  id: 8655996,
+  name: 'apiautomation',
+  email: 'apiautomation1791433145408@open.com',
+  gender: 'male',
+  status: 'active'
+} 200
+204
+{ message: 'Resource not found' } 404

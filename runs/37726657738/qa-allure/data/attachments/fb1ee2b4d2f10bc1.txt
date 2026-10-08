@@ -1,0 +1,8 @@
+{
+  id: 8655997,
+  name: 'Playwrigth API Auto User',
+  email: 'pwauto_1791433146505@open.com',
+  gender: 'male',
+  status: 'active'
+} 201
+created user id: 8655997
