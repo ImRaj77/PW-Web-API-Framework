@@ -111,8 +111,8 @@ pipeline {
                         usernamePassword(credentialsId: 'dev-credentials',
                             usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD'),
                         string(credentialsId: 'api-token', variable: 'API_TOKEN'),
-                        string(credentialsId: 'oauth-client-id', variable: 'OAUTH_CLIENT_ID'),
-                        string(credentialsId: 'oauth-client-secret', variable: 'OAUTH_CLIENT_SECRET'),
+                        // string(credentialsId: 'oauth-client-id', variable: 'OAUTH_CLIENT_ID'),
+                        // string(credentialsId: 'oauth-client-secret', variable: 'OAUTH_CLIENT_SECRET'),
                         string(credentialsId: 'dev-base-url', variable: 'BASE_URL'),
                         string(credentialsId: 'api-base-url', variable: 'API_BASE_URL')
                     ]) {
@@ -185,8 +185,8 @@ pipeline {
                         usernamePassword(credentialsId: 'qa-credentials',
                             usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD'),
                         string(credentialsId: 'api-token', variable: 'API_TOKEN'),
-                        string(credentialsId: 'oauth-client-id', variable: 'OAUTH_CLIENT_ID'),
-                        string(credentialsId: 'oauth-client-secret', variable: 'OAUTH_CLIENT_SECRET'),
+                        // string(credentialsId: 'oauth-client-id', variable: 'OAUTH_CLIENT_ID'),
+                        // string(credentialsId: 'oauth-client-secret', variable: 'OAUTH_CLIENT_SECRET'),
                         string(credentialsId: 'qa-base-url', variable: 'BASE_URL'),
                         string(credentialsId: 'api-base-url', variable: 'API_BASE_URL')
                     ]) {
@@ -259,8 +259,8 @@ pipeline {
                         usernamePassword(credentialsId: 'stage-credentials',
                             usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD'),
                         string(credentialsId: 'api-token', variable: 'API_TOKEN'),
-                        string(credentialsId: 'oauth-client-id', variable: 'OAUTH_CLIENT_ID'),
-                        string(credentialsId: 'oauth-client-secret', variable: 'OAUTH_CLIENT_SECRET'),
+                        // string(credentialsId: 'oauth-client-id', variable: 'OAUTH_CLIENT_ID'),
+                        // string(credentialsId: 'oauth-client-secret', variable: 'OAUTH_CLIENT_SECRET'),
                         string(credentialsId: 'stage-base-url', variable: 'BASE_URL'),
                         string(credentialsId: 'api-base-url', variable: 'API_BASE_URL')
                     ]) {
@@ -341,8 +341,8 @@ pipeline {
                         usernamePassword(credentialsId: 'prod-credentials',
                             usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD'),
                         string(credentialsId: 'api-token', variable: 'API_TOKEN'),
-                        string(credentialsId: 'oauth-client-id', variable: 'OAUTH_CLIENT_ID'),
-                        string(credentialsId: 'oauth-client-secret', variable: 'OAUTH_CLIENT_SECRET'),
+                        // string(credentialsId: 'oauth-client-id', variable: 'OAUTH_CLIENT_ID'),
+                        // string(credentialsId: 'oauth-client-secret', variable: 'OAUTH_CLIENT_SECRET'),
                         string(credentialsId: 'prod-base-url', variable: 'BASE_URL'),
                         string(credentialsId: 'api-base-url', variable: 'API_BASE_URL')
                     ]) {
